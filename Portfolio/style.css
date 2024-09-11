@@ -248,7 +248,7 @@ header .nav-item:hover .nav-link {
   padding: 40px 30px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
-  width: 35%;
+
   margin-right: 30px;
   border-radius: 15px;
   background: rgba(255, 255, 255, 0.25);
@@ -294,4 +294,90 @@ footer {
   100% {
     scale: 1;
   }
+}
+
+/* Desktop first */
+/* xxl - 1400px */
+@media screen and (max-width: 1400px) {
+  .heading {
+    width: 650px;
+  }
+}
+/* md 768px */
+/* xl - 1200px */
+@media screen and (max-width: 1200px) {
+  .carousel-item .carousel-content h1 {
+    font-size: 45px;
+  }
+}
+
+/* lg - 992px */
+@media screen and (max-width: 992px) {
+  .navbar-toggler {
+    background-color: #fff;
+    border: 1px solid white;
+  }
+}
+
+/* md - 768px */
+@media screen and (max-width: 768px) {
+  .feature {
+    margin: 40px 0;
+  }
+  .achievement {
+    padding: 20px 0 50px;
+  }
+  .right-achievement {
+    margin-top: 30px;
+  }
+  .carousel-item .carousel-content h1 {
+    margin-top: 15px;
+    font-size: 5vw;
+  }
+
+  .carousel-item .carousel-content p {
+    font-size: 2vw;
+  }
+
+  .heading {
+    width: 100%;
+  }
+}
+
+.cd-top {
+  width: 50px;
+  height: 50px;
+  background-color: #079d34;
+  position: fixed;
+  right: 30px;
+  bottom: 50px;
+  opacity: 0;
+  display: inline-block;
+  visibility: hidden;
+  line-height: 50px;
+  text-align: center;
+  z-index: 999;
+  border-radius: 10px;
+}
+
+.cd-top--is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.cd-top--fade-out {
+  opacity: 0.5;
+}
+
+.cd-top:hover {
+  opacity: 1;
+}
+
+.cd-top--is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.cd-top--fade-out {
+  opacity: 0.5;
 }
